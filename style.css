@@ -1,0 +1,107 @@
+/* styles.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: #022e57;
+    color: #ffffff;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header h1, header p {
+    margin: 0;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skills, .experience, .education {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    color: #022e57;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.job h3 {
+    color: #333;
+}
+
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .skills, .experience, .education {
+        flex: 1 1 45%; /* Allow wrapping and flexible sizing */
+        margin: 10px;
+    }
+}
+
+footer {
+    background: #022e57;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+a {
+    color: #808080; /* Gray color */
+}
+
+.email-link {
+    color: #808080; /* Gray color */
+}
+@media (max-width: 1600px) {
+    body {
+        background-color: #007bff; /* Blue background color when width is less than 600px */
+    }
+}
